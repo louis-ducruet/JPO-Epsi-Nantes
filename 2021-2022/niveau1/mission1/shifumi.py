@@ -14,7 +14,7 @@ score = [0, 0]
 saisie_jx : 1 pour Pierre, 2 pour Feuille, 3 pour Ciseaux
 Utiliser plusieurs fois les conditions ci-dessous
 """
-def test_gagnant(nom_j1: str, saisie_j1: int, nom_j2: str, saisie_j2: int, game_score: List[int]):
+def test_gagnant(nom_j1: str, saisie_j1: int, nom_j2: str, saisie_j2: int, game_score: List[int]) -> List[int]:
     # Si égalité
     if False:
         print('Égalité ! Personne ne gagne de point.')

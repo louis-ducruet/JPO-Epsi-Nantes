@@ -14,6 +14,7 @@ testValues = [
     {"j1": 3, "j2": 2, "sc": [1, 0], "msg": "Victoire des ciseaux sur la feuille"}
 ]
 
+
 class TestCase(unittest.TestCase):
     def test_add(self):
         for tv in testValues:
