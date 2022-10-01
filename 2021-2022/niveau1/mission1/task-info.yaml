@@ -9,4 +9,6 @@ files:
   visible: false
 - name: tests/__init__.py
   visible: false
+- name: functions.py
+  visible: false
 solution_hidden: true
