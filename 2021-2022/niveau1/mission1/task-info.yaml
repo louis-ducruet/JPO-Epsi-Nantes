@@ -1,0 +1,12 @@
+type: edu
+custom_name: Débuter l'atelier
+files:
+- name: shifumi.py
+  visible: true
+- name: tests/test_task.py
+  visible: false
+- name: __init__.py
+  visible: false
+- name: tests/__init__.py
+  visible: false
+solution_hidden: true
