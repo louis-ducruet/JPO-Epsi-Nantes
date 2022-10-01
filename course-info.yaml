@@ -6,14 +6,18 @@ summary: |-
   <p>L'objectif est de compléter les conditions de victoire du shifumi. <em>(Durée : 30 min)</em></p>
 
   <p>Avec 3 niveaux de difficulté :<p>
-  <ul><li><strong>Niveau R2-D2 :</strong> Completer les conditions</li>
-  <li><strong>Niveau Obi-Wan :</strong> Completer les conditions et les actions des conditions</li>
-  <li><strong>Niveau Dark Vador :</strong> Comme niveau Jedi mais avec seulement 5 conditions (else compte comme 1 condition)</li>
+  <ul><li><strong>Niveau Débutant :</strong> Completer les conditions</li>
+  <li><strong>Niveau Explorateur :</strong> Completer les conditions et les actions des conditions</li>
+  <li><strong>Niveau Savant :</strong> Comme niveau Explorateur mais avec seulement 5 conditions (else compte comme 1 condition)</li>
   </ul>
 programming_language: Python
 programming_language_version: 3.8
 environment: unittest
 solutions_hidden: true
+vendor:
+  name: Louis Ducruet
+  email: louis.ducruet@epsi.fr
+  url: https://github.com/louis-ducruet
 content:
 - 2021-2022
 - 2022-2023
