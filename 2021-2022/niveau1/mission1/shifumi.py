@@ -1,4 +1,6 @@
+from typing import List, NoReturn
 import functions as shifumi
+
 
 # Variables globales
 options = ['Pierre', 'Feuille', 'Ciseaux']
@@ -12,7 +14,7 @@ score = [0, 0]
 saisie_jx : 1 pour Pierre, 2 pour Feuille, 3 pour Ciseaux
 Utiliser plusieurs fois les conditions ci-dessous
 """
-def test_gagnant(nom_j1, saisie_j1, nom_j2, saisie_j2, game_score):
+def test_gagnant(nom_j1: str, saisie_j1: int, nom_j2: str, saisie_j2: int, game_score: List[int]):
     # Si égalité
     if False:
         print('Égalité ! Personne ne gagne de point.')
@@ -29,7 +31,7 @@ def test_gagnant(nom_j1, saisie_j1, nom_j2, saisie_j2, game_score):
 
 
 # Fonction déterminant le déroulement d'une partie
-def game():
+def game() -> NoReturn:
     global score
     shifumi.affichage_regles()
     while score[0] != 3 and score[1] != 3:
@@ -42,7 +44,7 @@ def game():
 
 
 # Fonction déterminant le déroulement du programme
-def main():
+def main() -> int:
     global score
     while True:
         saisie = input('Voulez vous lancer une partie de Pierre / Feuille / Ciseaux ? (O)ui / (N)on : ').upper()
@@ -57,4 +59,4 @@ def main():
 
 
 if __name__ == '__main__':
-   main()
+    main()
