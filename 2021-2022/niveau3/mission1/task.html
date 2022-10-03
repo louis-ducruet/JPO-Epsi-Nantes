@@ -11,9 +11,8 @@
         <img src="./../../../assets/logoEpsi.svg" width="65%" alt="logo epsi"/>
         <img src="./../../../assets/logoWis.svg" width="69%" alt="logo wis"/>
     </div>
-    <h1 style="text-align: center">
-        JPO EPSI - WIS :<br>
-        10 Décembre 2O22
+    <h1 id="titre-jpo" style="text-align: center">
+        JPO EPSI - WIS
     </h1>
     <hr>
     <h2>Présentation de l'atelier</h2>
@@ -42,7 +41,19 @@
         ⚠  Max : 5 conditions (else compte comme 1 condition)  ⚠
     </p>
     <div class="hint">
-            <img src="./../../assets/aide.png" width="100%" alt="R2-D2"/>
+            <img src="./../../assets/aide.png" width="100%" alt="aide"/>
     </div>
+    <script>
+        var cejour = new Date();
+        var options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "2-digit"
+        };
+        var date = cejour.toLocaleDateString("fr-FR", options);
+        var date = date.replace(/(^\w{1})|(\s+\w{1})/g, lettre => lettre.toUpperCase());
+        document.getElementById('titre-jpo').innerHTML = 'JPO EPSI - WIS :<br>' + date;
+    </script>
 </body>
 </html>
