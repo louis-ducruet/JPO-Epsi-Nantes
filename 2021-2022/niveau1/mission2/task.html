@@ -1,0 +1,75 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shifumi - Débutant</title>
+</head>
+<body>
+<div align="center" class="header">
+    <img src="./../../../assets/logoEpsi.svg" width="65%" alt="logo epsi"/>
+    <img src="./../../../assets/logoWis.svg" width="69%" alt="logo wis"/>
+</div>
+<h1 id="titre-jpo" style="text-align: center">
+    JPO EPSI - WIS
+</h1>
+<hr>
+<h2>Aller plus loin</h2>
+<p>
+    Bravo, vous venez de finir l'objectif principale de l'atelier ! Vous pouvez toutefois remplir des objectifs
+    secondaires comme :
+</p>
+<ul>
+    <li>
+        Permettre aux joueurs de <strong>choisir un nom</strong>
+        <div class="hint" style="margin: 0; background-color: #203b5c; padding: 0.5em; border-radius: 0.5em">
+            Exemple de récupération de valeur :<br>
+            <code>
+                variable = input("Saisir la valeur de variable : ")
+            </code>
+        </div>
+    </li>
+    <li>
+        <strong>Ajouter des couleurs</strong> au nom des joueurs
+        <div class="hint" style="margin: 0; background-color: #203b5c; padding: 0.5em; border-radius: 0.5em">
+            <a href="https://stackabuse.com/how-to-print-colored-text-in-python/#16colorsinrawpython">
+                Lien vers un article explicatif en anglais
+            </a>
+        </div>
+    </li>
+    <li>
+        Rendre le <strong>joueur 2 autonome</strong> (PNJ)
+        <div class="hint" style="margin: 0; background-color: #203b5c; padding: 0.5em; border-radius: 0.5em">
+            La méthode la plus simple est que le joueur 2 joue aléatoirement😉.<br>
+            <a href="https://www.w3schools.com/python/ref_random_randint.asp">
+                Lien vers une documentation en anglais.
+            </a>
+        </div>
+    </li>
+    <li>
+        <strong>Modification des règles</strong> pour s'adapter à la version Pierre, Papier, Ciseaux, Lézard, Spock
+        <div class="hint" style="margin: 0; background-color: #203b5c; padding: 0.5em; border-radius: 0.5em">
+            <img src="./../../assets/bonus-regles-suplementaires.png" width="100%" alt="bonus">
+        </div>
+    </li>
+</ul>
+<p align="center" style="color: #7B3331; background-color: #E1C864">
+        <strong>❗❗❗᲼᲼᲼᲼᲼᲼᲼᲼Information Importante :᲼᲼᲼᲼᲼᲼᲼᲼❗❗❗</strong><br>
+        Copier-coller votre code de Débuter l'atelier (shifumi.py) dans main.py
+    </p>
+<script>
+        var cejour = new Date();
+        var options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "2-digit"
+        };
+        var date = cejour.toLocaleDateString("fr-FR", options);
+        var date = date.replace(/(^\w{1})|(\s+\w{1})/g, lettre => lettre.toUpperCase());
+        document.getElementById('titre-jpo').innerHTML = 'JPO EPSI - WIS :<br>' + date;
+
+</script>
+</body>
+</html>

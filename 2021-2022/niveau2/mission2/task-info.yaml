@@ -1,0 +1,13 @@
+type: theory
+custom_name: Aller plus loin
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 44
+    placeholder_text: ""
+- name: __init__.py
+  visible: false
+- name: functions.py
+  visible: false
