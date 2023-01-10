@@ -15,7 +15,13 @@ testValues = [
 ]
 
 
-class TestCase(unittest.TestCase):
+class AssertCustomEqual:
+    def assert_custom_equal(self, val1, val2, msg):
+        if val1 != val2:
+            raise AssertionError("<b color='red'>Error durant le test : {}<b> <br>Attendu : {} <br>Résultat : {}".format(msg, val1, val2))
+
+
+class TestCase(unittest.TestCase, AssertCustomEqual):
     def test_add(self):
         for tv in testValues:
-            self.assertEqual(test_gagnant("", tv["j1"], "", tv["j2"], [0, 0]), tv["sc"], msg=tv["msg"])
+            self.assert_custom_equal(tv["sc"], test_gagnant("", tv["j1"], "", tv["j2"], [0, 0]), tv["msg"])
