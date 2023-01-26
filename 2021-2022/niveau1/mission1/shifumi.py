@@ -55,7 +55,7 @@ def main() -> int:
             else:
                 return 0
         else:
-            print('Saisie incorrect !')
+            print('Saisie incorrecte !')
 
 
 if __name__ == '__main__':
